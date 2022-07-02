@@ -7,7 +7,7 @@ const {
     Modal,
     TextInputComponent,
 } = require("discord.js");
-const pollModel = require("../schemas/pollSchema.js");
+const pollModel = require("../../schemas/pollSchema.js");
 module.exports = {
     name: "interactionCreate",
     async execute(interaction) {
