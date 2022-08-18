@@ -3,3 +3,5 @@ node_modules
 .eslintrc.json
 archive
 package-lock.json
+build
+guilds.txt
