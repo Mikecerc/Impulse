@@ -1,26 +1,30 @@
 {
-  "name": "impulse",
+  "name": "illusionv2",
   "version": "2.0.0",
+  "description": "Discord Bot illusion for 862 electrical (version 2.0.0)",
   "type": "module",
-  "description": "Discord Bot illusion for 862 Strategy (version 2.0.0)",
-  "main": "index.js",
+  "main": "./build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "listGuilds": "node ./src/util/listGuilds.js"
   },
   "author": "C. Michael",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.9.0",
+    "@discordjs/voice": "^0.11.0",
+    "discord.js": "^14.1.2",
     "dotenv": "^16.0.0",
-    "fs": "^0.0.1-security",
-    "moment": "^2.29.1",
-    "mongoose": "^6.3.4",
-    "node-fetch": "^3.2.3",
-    "@discordjs/voice": "^0.10.0",
     "ffmpeg-static": "^4.4.1",
+    "fs": "^0.0.1-security",
+    "libsodium-wrappers": "^0.7.10",
+    "moment": "^2.29.1",
+    "mongoose": "^6.5.1",
+    "node-fetch": "^3.2.10",
+    "spotify-uri": "^3.0.2",
+    "spotify-web-api-node": "^5.0.2",
     "yt-search": "^2.10.3",
-    "ytdl-core": "^4.11.0",
-    "libsodium-wrappers": "^0.7.10"
+    "ytdl-core": "^4.10.0"
   },
   "devDependencies": {
     "eslint": "^7.32.0"
